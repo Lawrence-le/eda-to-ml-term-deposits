@@ -2,6 +2,12 @@
 
 echo "Starting ML Pipeline..."
 
+# Check if virtual environment exists; if not, create it
+if [ ! -d "venv" ]; then
+  echo "Creating virtual environment..."
+  python3 -m venv venv
+fi
+
 # Activate the virtual environment
 source venv/bin/activate
 # source venv/Scripts/activate  # For Windows via GitBash
