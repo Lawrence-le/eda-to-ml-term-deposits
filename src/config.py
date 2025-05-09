@@ -1,8 +1,17 @@
-DATA_PATH = "data/bmarket.csv"
-OUTPUT_DIR = "outputs/"
-MODEL_PATH = "models/my_model.pth"
-LOG_PATH = "logs/training.log"
+# config.py
 
-LEARNING_RATE = 0.001
-BATCH_SIZE = 32
-EPOCHS = 20
+import os
+
+# Get the absolute path of the project root
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(PROJECT_DIR, "../data/bmarket.db")
+OUTPUT_DIR = os.path.join(PROJECT_DIR, "../outputs/")
+
+IMPORTANT_FEATURES = [
+    "Age",
+    "Occupation",
+    "Campaign Calls",
+    "Previous Contact Days",
+    "Credit Default",
+    "Subscription Status",
+]
