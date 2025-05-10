@@ -108,12 +108,16 @@ for probs, name in zip(
     ["Logistic Regression", "Random Forest", "XGBoost"],
 ):
     fpr, tpr, _ = roc_curve(y_test, probs)
-    plt.plot(fpr, tpr, label=f"{name} (AUC = {roc_auc_score(y_test, probs):.2f})")
+    auc_score = roc_auc_score(y_test, probs)
+    plt.plot(fpr, tpr, label=f"{name} (AUC = {auc_score:.2f})")
 
-plt.plot([0, 1], [0, 1], "k--")
+# diagonal line for random classifier
+plt.plot([0, 1], [0, 1], "k--", label="Random Classifier (AUC = 0.50)")
+
+# axis labels and title
 plt.xlabel("False Positive Rate")
-plt.ylabel("True Positive Rate")
-plt.title("ROC Curve Comparison")
+plt.ylabel("True Positive Rate (Recall)")
+plt.title("ROC Curve – Model Performance Comparison")
 plt.legend()
 plt.grid()
 plt.savefig(f"{OUTPUT_DIR}roc_curve_comparison.png")

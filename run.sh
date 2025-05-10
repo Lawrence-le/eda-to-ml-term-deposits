@@ -59,3 +59,6 @@ $PYTHON_CMD src/model.py & spin
 echo "==========================================="
 echo "Pipeline Complete!"
 echo "==========================================="
+
+echo "Press [Enter] to exit..."
+read
