@@ -179,7 +179,7 @@ Three models were trained and evaluated on the test dataset to predict Subscript
 - High precision → fewer false positives.
 
 ### Model Comparison
-![ROC Curve Comparison](../aiap20-lawrence-lee-men-keng-002I/outputs/roc_curve_comparison.png)
+![ROC Curve Comparison](outputs/roc_curve_comparison.png)
 
 ### Logistic Regression 
 ````
