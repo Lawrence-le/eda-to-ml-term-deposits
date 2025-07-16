@@ -1,5 +1,4 @@
 # Project Title: Predicting Term Deposit Subscriptions
-### AIAPⓇ Batch 20 Technical Assessment 
 
 ## Project Description
 As a new member of the AI Data Science and Engineering team at AI-Vive-Banking, I developed predictive models to identify clients most likely to subscribe to term deposits based on demographic data and marketing campaign history. I began with exploratory data analysis in eda.ipynb to uncover key patterns, detect anomalies, and guide preprocessing. Using the provided dataset, I then built and evaluated three classification models and identified key features driving predictions. This project aims to improve campaign targeting and optimize marketing resources.
